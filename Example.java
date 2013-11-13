@@ -5,7 +5,7 @@ public class Example {
   public static void main(String[] args) {
     
     
-    Collection<Integer> ints = Arrays.asList({1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12});
+    Collection<Integer> ints = Arrays.asList(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12});
     TableMap<Integer, Integer, Integer> multiplicationTable = new TableMap<Integer, Integer, Integer>(ints, ints, Integer.class);
     for(Integer integ : ints) {
       for (Integer integ2 : ints) {

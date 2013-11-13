@@ -13,6 +13,11 @@ public class Example {
       }
     }
     
-    System.out.println(multiplicationTable.get(12, 12) + " = 144");
+    
+    for (Integer integ: ints) {
+      for (Integer integ2: ints) {
+        System.out.println(integ + " x " + integ2 + " = " + multiplicationTable.get(integ, integ2));
+      }
+    }
   }
 }

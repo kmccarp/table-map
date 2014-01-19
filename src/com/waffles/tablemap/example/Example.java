@@ -1,5 +1,9 @@
-import java.util.Collection;
+package com.waffles.tablemap.example;
+
 import java.util.Arrays;
+import java.util.Collection;
+
+import com.waffles.tablemap.TableMap;
 
 public class Example {
   public static void main(String[] args) {

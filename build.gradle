@@ -1,0 +1,25 @@
+
+allprojects {
+    apply plugin: 'groovy'
+    
+    sourceSets {
+        main {
+            java.srcDirs = []
+            groovy.srcDirs = ['src']
+            resources.srcDirs = ['src']
+        }
+        test {
+            java.srcDirs = []
+            groovy.srcDirs = ['src', 'test']
+            resources.srcDirs = ['src', 'test']
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+    
+    dependencies {
+        compile 'junit:junit:+'
+        compile 'org.codehaus.groovy:groovy-all:+'
+    }
+}

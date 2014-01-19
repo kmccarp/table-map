@@ -41,5 +41,6 @@ public class TestTableMap {
 		assertEquals(null, carsAndYearsToCostMap.get(audi2006, audi2008.year));
 		assertEquals(null, carsAndYearsToCostMap.get(audi2008, audi2006.year));
 		
+		assertEquals(null, carsAndYearsToCostMap.get(null, null));
 	}
 }
